@@ -56,6 +56,8 @@ public class Application {
 
         // setvisible
         frame.pack();
+        // ici on centre notre fenetre
+        frame.setLocationRelativeTo(null);
         control.requestFocus();
         frame.setVisible(true);
     }

@@ -42,11 +42,6 @@ public class Vue extends JPanel {
     private ImageIcon solIcone;
 
     /**
-     * Gestion des animations
-     */
-     private Timer animationTimer;
-
-    /**
      * construction d'une vue a partie d'un jeu.
      * construit une vue a la bonne taille a partir du descriptif du jeu.
      *
@@ -273,6 +268,7 @@ public class Vue extends JPanel {
 
             // Si l'animation n'est pas null, dessinez l'image d'animation du personnage
             if (animation != null) {
+
                 Image image = animation[0].getImage();
                 g.drawImage(image, dx * TAILLE, dy * TAILLE, TAILLE, TAILLE, null);
                 int x = dx * TAILLE;

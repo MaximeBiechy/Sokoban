@@ -8,7 +8,7 @@ public class Main {
 
   public static void main(String args []) throws Exception {
 
-  Jeu jeu = Chargement.chargerJeu("laby/laby_simple.txt");
+  Jeu jeu = Chargement.chargerJeu("laby/laby_test.txt");
   Application app = new Application(jeu);
 
   }
