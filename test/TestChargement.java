@@ -1,10 +1,12 @@
-import static org.junit.Assert.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.Test;
-import jeu.*;
+import jeu.Chargement;
+import jeu.FichierIncorrectException;
+import jeu.Jeu;
+import org.junit.Test;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
+
+import static org.junit.Assert.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestChargement {
 

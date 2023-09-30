@@ -56,9 +56,8 @@ public class Vue extends JPanel {
         // stocke la reference
         this.jeu = jeu;
 
-        importImg();
         // elements jeu
-        /*this.caisseIcon = new ImageIcon("sprites/crate.png");
+        this.caisseIcon = new ImageIcon("sprites/crate.png");
         this.murIcon = new ImageIcon("sprites/block.png");
         this.depotIcon = new ImageIcon("sprites/environment.png");
         this.solIcone = new ImageIcon("sprites/ground.png");
@@ -80,7 +79,7 @@ public class Vue extends JPanel {
         personnageGaucheAnimation[0] = new ImageIcon("sprites/player_arret_gauche.png");
         personnageGaucheAnimation[1] = new ImageIcon("sprites/player_avance_gauche_01.png");
         personnageGaucheAnimation[2] = new ImageIcon("sprites/player_avance_gauche_02.png");
-        */
+
         // initialise la frame
         String descriptif = jeu.jeuToString();
 
@@ -98,11 +97,12 @@ public class Vue extends JPanel {
     }
 
     private void importImg() {
-        InputStream is = getClass().getResourceAsStream("/sokoban_spritesheet.png");
+        InputStream is = getClass().getResourceAsStream("/sprites/sokoban_spritesheet.png");
         try {
         img = ImageIO.read(is);
         } catch (IOException e){
             e.printStackTrace();
+            e.getMessage();
         }
     }
 
@@ -132,7 +132,7 @@ public class Vue extends JPanel {
 
                 // traite caractere par caractere
                 char charAffiche = ligneAffiche.charAt(numCol);
-                //dessinerChar(g, numLigne, numCol, charAffiche);
+                dessinerChar(g, numLigne, numCol, charAffiche);
             }
         }
         // fin d'affichage
