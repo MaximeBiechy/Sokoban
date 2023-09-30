@@ -96,18 +96,6 @@ public class Vue extends JPanel {
         this.repaint();
     }
 
-    private void importImg() {
-        InputStream is = getClass().getResourceAsStream("/sprites/sokoban_spritesheet.png");
-        try {
-        img = ImageIO.read(is);
-        } catch (IOException e){
-            e.printStackTrace();
-            e.getMessage();
-        }
-    }
-
-
-
     /**
      * redefinit la methode d'affoichage
      *
