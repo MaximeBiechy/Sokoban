@@ -186,7 +186,7 @@ public class Jeu {
         return false;
       }
     }
-    return true;
+    return true;  
   }
 
   // GETTER
